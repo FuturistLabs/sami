@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		959F07471BD10CCE007C6537 /* BombitaviInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 959F07461BD10CCE007C6537 /* BombitaviInfo.m */; settings = {ASSET_TAGS = (); }; };
+		959F07491BD11470007C6537 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 959F07481BD11470007C6537 /* Sounds */; settings = {ASSET_TAGS = (); }; };
+		959F074D1BD11759007C6537 /* Buzzer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 959F074C1BD11758007C6537 /* Buzzer.mp3 */; settings = {ASSET_TAGS = (); }; };
+		D91D75B41ADC2B170093C46B /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91D75B31ADC2B170093C46B /* ParseUI.framework */; };
+		D92DF3061AE5587A0098CB37 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D92DF3051AE5587A0098CB37 /* AppIcon.png */; };
+		D96DE6051AD2DF6C00526EF5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96DE6031AD2DF6C00526EF5 /* Bolts.framework */; };
+		D96DE6061AD2DF6C00526EF5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96DE6041AD2DF6C00526EF5 /* Parse.framework */; };
+		D96DE6091AD2DFCC00526EF5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96DE6081AD2DFCC00526EF5 /* AudioToolbox.framework */; };
+		D96DE60B1AD2DFD100526EF5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96DE60A1AD2DFD100526EF5 /* CFNetwork.framework */; };
+		D96DE60D1AD2DFD900526EF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96DE60C1AD2DFD900526EF5 /* CoreGraphics.framework */; };
+		D96DE60F1AD2DFDF00526EF5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96DE60E1AD2DFDF00526EF5 /* CoreLocation.framework */; };
+		D96DE6111AD2DFE600526EF5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96DE6101AD2DFE600526EF5 /* MobileCoreServices.framework */; };
+		D96DE6131AD2DFED00526EF5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96DE6121AD2DFED00526EF5 /* QuartzCore.framework */; };
+		D96DE6151AD2DFF300526EF5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96DE6141AD2DFF300526EF5 /* Security.framework */; };
+		D96DE6171AD2DFFF00526EF5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96DE6161AD2DFFF00526EF5 /* StoreKit.framework */; };
+		D96DE6191AD2E00E00526EF5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96DE6181AD2E00E00526EF5 /* SystemConfiguration.framework */; };
+		D96DE61B1AD2E01600526EF5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D96DE61A1AD2E01600526EF5 /* libz.dylib */; };
+		D96DE61D1AD2E01F00526EF5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D96DE61C1AD2E01F00526EF5 /* libsqlite3.dylib */; };
+		D96DE6201AD2E4F100526EF5 /* EnterGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96DE61F1AD2E4F100526EF5 /* EnterGameController.m */; };
+		D96DE6231AD2E52000526EF5 /* BuzzerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96DE6221AD2E52000526EF5 /* BuzzerController.m */; };
+		D96DE6261AD2E54700526EF5 /* CreateGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96DE6251AD2E54700526EF5 /* CreateGameController.m */; };
+		D96DE6291AD2E63100526EF5 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96DE6281AD2E63100526EF5 /* TableViewController.m */; };
+		D9799D441AE5529600533A57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9799D431AE5529600533A57 /* Images.xcassets */; };
+		D9904ED31A9CEBE500134E5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9904ED21A9CEBE500134E5D /* main.m */; };
+		D9904ED61A9CEBE500134E5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9904ED51A9CEBE500134E5D /* AppDelegate.m */; };
+		D9904ED91A9CEBE500134E5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9904ED81A9CEBE500134E5D /* ViewController.m */; };
+		D9904EDC1A9CEBE500134E5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9904EDA1A9CEBE500134E5D /* Main.storyboard */; };
+		D9904EE11A9CEBE500134E5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9904EDF1A9CEBE500134E5D /* LaunchScreen.xib */; };
+		D9904EED1A9CEBE500134E5D /* BombitaviTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9904EEC1A9CEBE500134E5D /* BombitaviTests.m */; };
+		D998CC941AE9455B0037D501 /* TableViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = D998CC931AE9455B0037D501 /* TableViewController2.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9904EE71A9CEBE500134E5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9904EC51A9CEBE500134E5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9904ECC1A9CEBE500134E5D;
+			remoteInfo = Bombitavi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		959F07451BD10CCE007C6537 /* BombitaviInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BombitaviInfo.h; sourceTree = "<group>"; };
+		959F07461BD10CCE007C6537 /* BombitaviInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BombitaviInfo.m; sourceTree = "<group>"; };
+		959F07481BD11470007C6537 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		959F074C1BD11758007C6537 /* Buzzer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Buzzer.mp3; path = Sounds/Buzzer.mp3; sourceTree = "<group>"; };
+		D91D75B31ADC2B170093C46B /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		D92DF3051AE5587A0098CB37 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		D96DE6031AD2DF6C00526EF5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		D96DE6041AD2DF6C00526EF5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		D96DE6081AD2DFCC00526EF5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D96DE60A1AD2DFD100526EF5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D96DE60C1AD2DFD900526EF5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D96DE60E1AD2DFDF00526EF5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D96DE6101AD2DFE600526EF5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D96DE6121AD2DFED00526EF5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D96DE6141AD2DFF300526EF5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D96DE6161AD2DFFF00526EF5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D96DE6181AD2E00E00526EF5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D96DE61A1AD2E01600526EF5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D96DE61C1AD2E01F00526EF5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		D96DE61E1AD2E4F100526EF5 /* EnterGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterGameController.h; sourceTree = "<group>"; };
+		D96DE61F1AD2E4F100526EF5 /* EnterGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterGameController.m; sourceTree = "<group>"; };
+		D96DE6211AD2E52000526EF5 /* BuzzerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuzzerController.h; sourceTree = "<group>"; };
+		D96DE6221AD2E52000526EF5 /* BuzzerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuzzerController.m; sourceTree = "<group>"; };
+		D96DE6241AD2E54700526EF5 /* CreateGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGameController.h; sourceTree = "<group>"; };
+		D96DE6251AD2E54700526EF5 /* CreateGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGameController.m; sourceTree = "<group>"; };
+		D96DE6271AD2E63100526EF5 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		D96DE6281AD2E63100526EF5 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		D9799D431AE5529600533A57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D9904ECD1A9CEBE500134E5D /* Bombitavi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bombitavi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9904ED11A9CEBE500134E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9904ED21A9CEBE500134E5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9904ED41A9CEBE500134E5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D9904ED51A9CEBE500134E5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D9904ED71A9CEBE500134E5D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D9904ED81A9CEBE500134E5D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D9904EDB1A9CEBE500134E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9904EE01A9CEBE500134E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D9904EE61A9CEBE500134E5D /* BombitaviTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BombitaviTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9904EEB1A9CEBE500134E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9904EEC1A9CEBE500134E5D /* BombitaviTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BombitaviTests.m; sourceTree = "<group>"; };
+		D998CC921AE9455B0037D501 /* TableViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController2.h; sourceTree = "<group>"; };
+		D998CC931AE9455B0037D501 /* TableViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController2.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9904ECA1A9CEBE500134E5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96DE61D1AD2E01F00526EF5 /* libsqlite3.dylib in Frameworks */,
+				D96DE61B1AD2E01600526EF5 /* libz.dylib in Frameworks */,
+				D91D75B41ADC2B170093C46B /* ParseUI.framework in Frameworks */,
+				D96DE6191AD2E00E00526EF5 /* SystemConfiguration.framework in Frameworks */,
+				D96DE6171AD2DFFF00526EF5 /* StoreKit.framework in Frameworks */,
+				D96DE6151AD2DFF300526EF5 /* Security.framework in Frameworks */,
+				D96DE6131AD2DFED00526EF5 /* QuartzCore.framework in Frameworks */,
+				D96DE6111AD2DFE600526EF5 /* MobileCoreServices.framework in Frameworks */,
+				D96DE60F1AD2DFDF00526EF5 /* CoreLocation.framework in Frameworks */,
+				D96DE60D1AD2DFD900526EF5 /* CoreGraphics.framework in Frameworks */,
+				D96DE60B1AD2DFD100526EF5 /* CFNetwork.framework in Frameworks */,
+				D96DE6091AD2DFCC00526EF5 /* AudioToolbox.framework in Frameworks */,
+				D96DE6061AD2DF6C00526EF5 /* Parse.framework in Frameworks */,
+				D96DE6051AD2DF6C00526EF5 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9904EE31A9CEBE500134E5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D96DE6071AD2DF7900526EF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				959F07481BD11470007C6537 /* Sounds */,
+				D91D75B31ADC2B170093C46B /* ParseUI.framework */,
+				D96DE61C1AD2E01F00526EF5 /* libsqlite3.dylib */,
+				D96DE61A1AD2E01600526EF5 /* libz.dylib */,
+				D96DE6181AD2E00E00526EF5 /* SystemConfiguration.framework */,
+				D96DE6161AD2DFFF00526EF5 /* StoreKit.framework */,
+				D96DE6141AD2DFF300526EF5 /* Security.framework */,
+				D96DE6121AD2DFED00526EF5 /* QuartzCore.framework */,
+				D96DE6101AD2DFE600526EF5 /* MobileCoreServices.framework */,
+				D96DE60E1AD2DFDF00526EF5 /* CoreLocation.framework */,
+				D96DE60C1AD2DFD900526EF5 /* CoreGraphics.framework */,
+				D96DE60A1AD2DFD100526EF5 /* CFNetwork.framework */,
+				D96DE6081AD2DFCC00526EF5 /* AudioToolbox.framework */,
+				D96DE6031AD2DF6C00526EF5 /* Bolts.framework */,
+				D96DE6041AD2DF6C00526EF5 /* Parse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9904EC41A9CEBE500134E5D = {
+			isa = PBXGroup;
+			children = (
+				D9904ECF1A9CEBE500134E5D /* Bombitavi */,
+				D9904EE91A9CEBE500134E5D /* BombitaviTests */,
+				D9904ECE1A9CEBE500134E5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9904ECE1A9CEBE500134E5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9904ECD1A9CEBE500134E5D /* Bombitavi.app */,
+				D9904EE61A9CEBE500134E5D /* BombitaviTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9904ECF1A9CEBE500134E5D /* Bombitavi */ = {
+			isa = PBXGroup;
+			children = (
+				D96DE6071AD2DF7900526EF5 /* Frameworks */,
+				D9904ED41A9CEBE500134E5D /* AppDelegate.h */,
+				D9904ED51A9CEBE500134E5D /* AppDelegate.m */,
+				D9904ED71A9CEBE500134E5D /* ViewController.h */,
+				D9904ED81A9CEBE500134E5D /* ViewController.m */,
+				D9904EDA1A9CEBE500134E5D /* Main.storyboard */,
+				D998CC921AE9455B0037D501 /* TableViewController2.h */,
+				D998CC931AE9455B0037D501 /* TableViewController2.m */,
+				D96DE6241AD2E54700526EF5 /* CreateGameController.h */,
+				D96DE6251AD2E54700526EF5 /* CreateGameController.m */,
+				D96DE6211AD2E52000526EF5 /* BuzzerController.h */,
+				D96DE6221AD2E52000526EF5 /* BuzzerController.m */,
+				D96DE61E1AD2E4F100526EF5 /* EnterGameController.h */,
+				D96DE61F1AD2E4F100526EF5 /* EnterGameController.m */,
+				D96DE6271AD2E63100526EF5 /* TableViewController.h */,
+				D96DE6281AD2E63100526EF5 /* TableViewController.m */,
+				D9799D431AE5529600533A57 /* Images.xcassets */,
+				959F074C1BD11758007C6537 /* Buzzer.mp3 */,
+				D92DF3051AE5587A0098CB37 /* AppIcon.png */,
+				D9904EDF1A9CEBE500134E5D /* LaunchScreen.xib */,
+				959F07451BD10CCE007C6537 /* BombitaviInfo.h */,
+				959F07461BD10CCE007C6537 /* BombitaviInfo.m */,
+				D9904ED01A9CEBE500134E5D /* Supporting Files */,
+			);
+			path = Bombitavi;
+			sourceTree = "<group>";
+		};
+		D9904ED01A9CEBE500134E5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9904ED11A9CEBE500134E5D /* Info.plist */,
+				D9904ED21A9CEBE500134E5D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9904EE91A9CEBE500134E5D /* BombitaviTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9904EEC1A9CEBE500134E5D /* BombitaviTests.m */,
+				D9904EEA1A9CEBE500134E5D /* Supporting Files */,
+			);
+			path = BombitaviTests;
+			sourceTree = "<group>";
+		};
+		D9904EEA1A9CEBE500134E5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9904EEB1A9CEBE500134E5D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9904ECC1A9CEBE500134E5D /* Bombitavi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9904EF01A9CEBE500134E5D /* Build configuration list for PBXNativeTarget "Bombitavi" */;
+			buildPhases = (
+				D9904EC91A9CEBE500134E5D /* Sources */,
+				D9904ECA1A9CEBE500134E5D /* Frameworks */,
+				D9904ECB1A9CEBE500134E5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bombitavi;
+			productName = Bombitavi;
+			productReference = D9904ECD1A9CEBE500134E5D /* Bombitavi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9904EE51A9CEBE500134E5D /* BombitaviTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9904EF31A9CEBE500134E5D /* Build configuration list for PBXNativeTarget "BombitaviTests" */;
+			buildPhases = (
+				D9904EE21A9CEBE500134E5D /* Sources */,
+				D9904EE31A9CEBE500134E5D /* Frameworks */,
+				D9904EE41A9CEBE500134E5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9904EE81A9CEBE500134E5D /* PBXTargetDependency */,
+			);
+			name = BombitaviTests;
+			productName = BombitaviTests;
+			productReference = D9904EE61A9CEBE500134E5D /* BombitaviTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9904EC51A9CEBE500134E5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Sami Kirkpatrick";
+				TargetAttributes = {
+					D9904ECC1A9CEBE500134E5D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D9904EE51A9CEBE500134E5D = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = D9904ECC1A9CEBE500134E5D;
+					};
+				};
+			};
+			buildConfigurationList = D9904EC81A9CEBE500134E5D /* Build configuration list for PBXProject "Bombitavi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9904EC41A9CEBE500134E5D;
+			productRefGroup = D9904ECE1A9CEBE500134E5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9904ECC1A9CEBE500134E5D /* Bombitavi */,
+				D9904EE51A9CEBE500134E5D /* BombitaviTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9904ECB1A9CEBE500134E5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				959F07491BD11470007C6537 /* Sounds in Resources */,
+				959F074D1BD11759007C6537 /* Buzzer.mp3 in Resources */,
+				D92DF3061AE5587A0098CB37 /* AppIcon.png in Resources */,
+				D9799D441AE5529600533A57 /* Images.xcassets in Resources */,
+				D9904EDC1A9CEBE500134E5D /* Main.storyboard in Resources */,
+				D9904EE11A9CEBE500134E5D /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9904EE41A9CEBE500134E5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9904EC91A9CEBE500134E5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96DE6201AD2E4F100526EF5 /* EnterGameController.m in Sources */,
+				D96DE6261AD2E54700526EF5 /* CreateGameController.m in Sources */,
+				D998CC941AE9455B0037D501 /* TableViewController2.m in Sources */,
+				D9904ED91A9CEBE500134E5D /* ViewController.m in Sources */,
+				D9904ED61A9CEBE500134E5D /* AppDelegate.m in Sources */,
+				D9904ED31A9CEBE500134E5D /* main.m in Sources */,
+				D96DE6291AD2E63100526EF5 /* TableViewController.m in Sources */,
+				D96DE6231AD2E52000526EF5 /* BuzzerController.m in Sources */,
+				959F07471BD10CCE007C6537 /* BombitaviInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9904EE21A9CEBE500134E5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9904EED1A9CEBE500134E5D /* BombitaviTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9904EE81A9CEBE500134E5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9904ECC1A9CEBE500134E5D /* Bombitavi */;
+			targetProxy = D9904EE71A9CEBE500134E5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9904EDA1A9CEBE500134E5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9904EDB1A9CEBE500134E5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9904EDF1A9CEBE500134E5D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9904EE01A9CEBE500134E5D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9904EEE1A9CEBE500134E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D9904EEF1A9CEBE500134E5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9904EF11A9CEBE500134E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bombitavi",
+				);
+				INFOPLIST_FILE = Bombitavi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Skirks.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9904EF21A9CEBE500134E5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bombitavi",
+				);
+				INFOPLIST_FILE = Bombitavi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Skirks.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9904EF41A9CEBE500134E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BombitaviTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Skirks.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bombitavi.app/Bombitavi";
+			};
+			name = Debug;
+		};
+		D9904EF51A9CEBE500134E5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BombitaviTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Skirks.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bombitavi.app/Bombitavi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9904EC81A9CEBE500134E5D /* Build configuration list for PBXProject "Bombitavi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9904EEE1A9CEBE500134E5D /* Debug */,
+				D9904EEF1A9CEBE500134E5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9904EF01A9CEBE500134E5D /* Build configuration list for PBXNativeTarget "Bombitavi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9904EF11A9CEBE500134E5D /* Debug */,
+				D9904EF21A9CEBE500134E5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9904EF31A9CEBE500134E5D /* Build configuration list for PBXNativeTarget "BombitaviTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9904EF41A9CEBE500134E5D /* Debug */,
+				D9904EF51A9CEBE500134E5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9904EC51A9CEBE500134E5D /* Project object */;
+}

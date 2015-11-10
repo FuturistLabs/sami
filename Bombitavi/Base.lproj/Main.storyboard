@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CHu-BC-UpN">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Bombitavi!-->
+        <scene sceneID="gcz-ta-IEA">
+            <objects>
+                <tableViewController id="tVJ-ET-b8q" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="73k-m8-b1o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="playerCell" id="YZh-1P-JQZ">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YZh-1P-JQZ" id="euv-V6-XeL">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tVJ-ET-b8q" id="Szk-4B-bD3"/>
+                            <outlet property="delegate" destination="tVJ-ET-b8q" id="pA6-WW-sLU"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Bombitavi!" id="zS0-wE-GHE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="qxA-Yy-qfS">
+                            <connections>
+                                <action selector="refresh:" destination="tVJ-ET-b8q" id="dBe-Q7-kIk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tv" destination="73k-m8-b1o" id="nSG-VN-V7H"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWl-U9-WI3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2052" y="1017"/>
+        </scene>
+        <!--Enter Game Controller-->
+        <scene sceneID="t8e-te-iss">
+            <objects>
+                <viewController id="x1B-w8-y4b" customClass="EnterGameController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e0h-2W-ijD"/>
+                        <viewControllerLayoutGuide type="bottom" id="fmP-zE-j8c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MPY-yX-gNr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNs-Mo-0Mg">
+                                <rect key="frame" x="209" y="72" width="183" height="55"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="35"/>
+                                <color key="textColor" red="0.98887310610000001" green="0.97641306019999996" blue="0.075934434290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Code Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zs9-rh-G5V">
+                                <rect key="frame" x="225" y="135" width="150" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="EXA-v6-itm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsB-M2-ZjG">
+                                <rect key="frame" x="186" y="266" width="228" height="67"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="35"/>
+                                <state key="normal" title="START GAME">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="x1B-w8-y4b" eventType="touchUpInside" id="4Pg-80-xdz"/>
+                                    <segue destination="tVJ-ET-b8q" kind="show" identifier="startGame" id="8n6-dW-Q87"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.55327325299999996" green="0.060129867080000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="zs9-rh-G5V" firstAttribute="centerX" secondItem="MPY-yX-gNr" secondAttribute="centerX" id="0az-xQ-Uau"/>
+                            <constraint firstItem="qsB-M2-ZjG" firstAttribute="centerY" secondItem="MPY-yX-gNr" secondAttribute="centerY" id="CPw-hH-fst"/>
+                            <constraint firstItem="zs9-rh-G5V" firstAttribute="top" secondItem="hNs-Mo-0Mg" secondAttribute="bottom" constant="8" id="V2e-tc-Fcx"/>
+                            <constraint firstItem="hNs-Mo-0Mg" firstAttribute="top" secondItem="e0h-2W-ijD" secondAttribute="bottom" constant="8" id="dv7-0B-qfW"/>
+                            <constraint firstItem="qsB-M2-ZjG" firstAttribute="centerX" secondItem="MPY-yX-gNr" secondAttribute="centerX" id="lwP-yz-7Y8"/>
+                            <constraint firstItem="hNs-Mo-0Mg" firstAttribute="centerX" secondItem="MPY-yX-gNr" secondAttribute="centerX" id="t2t-z9-lks"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameCode" destination="zs9-rh-G5V" id="fC0-AS-ARl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Py7-yt-Z1w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="1017"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOMBITAVI!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARd-vD-tMo">
+                                <rect key="frame" x="150" y="72" width="300" height="94"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="TkU-cc-0mJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="52"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="32" y="84" width="347" height="94"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhS-ui-lnn">
+                                <rect key="frame" x="230" y="270" width="140" height="59"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="30"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Join Game">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SqX-Z4-55Q" kind="show" id="fP7-A1-NR2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o00-w9-tWE">
+                                <rect key="frame" x="226" y="203" width="149" height="59"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="30"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Host Game">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="x1B-w8-y4b" kind="show" id="ZlV-lG-KU1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sT-3I-S7R">
+                                <rect key="frame" x="261" y="571" width="79" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="c6E-Og-aqL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="-11" height="-1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Andrew Valner and Sami Kirkpatrick at XRDS School" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaJ-OU-7RC">
+                                <rect key="frame" x="147" y="559" width="307" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4kw-ii-bMR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="10"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.55327325295717011" green="0.060129867084498856" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1sT-3I-S7R" firstAttribute="top" secondItem="xaJ-OU-7RC" secondAttribute="bottom" constant="-9" id="CRI-kl-v1c"/>
+                            <constraint firstItem="o00-w9-tWE" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="KbQ-zY-qbV"/>
+                            <constraint firstItem="UhS-ui-lnn" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Rtr-kn-4d7"/>
+                            <constraint firstItem="UhS-ui-lnn" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Tdg-8g-Esm"/>
+                            <constraint firstItem="UhS-ui-lnn" firstAttribute="top" secondItem="o00-w9-tWE" secondAttribute="bottom" constant="8" id="ZjY-Vu-4W0"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1sT-3I-S7R" secondAttribute="bottom" constant="8" id="aLv-f8-Uyg"/>
+                            <constraint firstItem="ARd-vD-tMo" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ibT-B5-762"/>
+                            <constraint firstItem="xaJ-OU-7RC" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="jaw-Tz-buy"/>
+                            <constraint firstItem="1sT-3I-S7R" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="lrp-Oq-a6S"/>
+                            <constraint firstItem="ARd-vD-tMo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="wQL-Yn-m5M"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ab0-M8-svC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="297"/>
+        </scene>
+        <!--Create Game Controller-->
+        <scene sceneID="gfK-mx-tQh">
+            <objects>
+                <viewController id="SqX-Z4-55Q" customClass="CreateGameController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rpo-15-AX9"/>
+                        <viewControllerLayoutGuide type="bottom" id="rUq-3O-qKE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="29v-ZA-Sg3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Player Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQa-dx-X9u">
+                                <rect key="frame" x="184" y="72" width="233" height="44"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="28"/>
+                                <color key="textColor" red="0.98887310610000001" green="0.97641306019999996" blue="0.075934434290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxx-4t-kYq">
+                                <rect key="frame" x="219" y="266" width="163" height="67"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="35"/>
+                                <state key="normal" title="Join Game">
+                                    <color key="titleColor" red="0.98887310610000001" green="0.97641306019999996" blue="0.075934434290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rN2-2t-oey" kind="show" id="TRs-eX-FaC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Player Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IVh-Hu-TtR">
+                                <rect key="frame" x="225" y="124" width="150" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="rg1-aE-aqI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="SqX-Z4-55Q" id="5dx-RT-TiP"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.55327325299999996" green="0.060129867080000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fQa-dx-X9u" firstAttribute="top" secondItem="rpo-15-AX9" secondAttribute="bottom" constant="8" id="EWd-vS-9Dg"/>
+                            <constraint firstItem="uxx-4t-kYq" firstAttribute="centerY" secondItem="29v-ZA-Sg3" secondAttribute="centerY" id="MBN-aO-WNT"/>
+                            <constraint firstItem="fQa-dx-X9u" firstAttribute="centerX" secondItem="29v-ZA-Sg3" secondAttribute="centerX" id="ace-un-GXP"/>
+                            <constraint firstItem="IVh-Hu-TtR" firstAttribute="centerX" secondItem="29v-ZA-Sg3" secondAttribute="centerX" id="kfu-i2-sFj"/>
+                            <constraint firstItem="IVh-Hu-TtR" firstAttribute="top" secondItem="fQa-dx-X9u" secondAttribute="bottom" constant="8" id="nJ2-2S-uFd"/>
+                            <constraint firstItem="uxx-4t-kYq" firstAttribute="centerX" secondItem="29v-ZA-Sg3" secondAttribute="centerX" id="pof-SK-KUI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enterPlayerName" destination="IVh-Hu-TtR" id="Kf5-T3-DjB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SWH-xm-Edv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2052" y="297"/>
+        </scene>
+        <!--Table View Controller2-->
+        <scene sceneID="rKw-wm-nxS">
+            <objects>
+                <tableViewController id="rN2-2t-oey" customClass="TableViewController2" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Pqm-Bm-ONq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="s1X-YF-Ap6">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s1X-YF-Ap6" id="FUI-Yp-pAQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <segue destination="Djw-CO-VYo" kind="show" id="dE1-EC-hMP"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rN2-2t-oey" id="pmm-mp-FAS"/>
+                            <outlet property="delegate" destination="rN2-2t-oey" id="wra-IV-g3t"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSt-a3-dXu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2746" y="297"/>
+        </scene>
+        <!--Buzzer Controller-->
+        <scene sceneID="lvf-kj-WHn">
+            <objects>
+                <viewController id="Djw-CO-VYo" customClass="BuzzerController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="plX-Bo-80c"/>
+                        <viewControllerLayoutGuide type="bottom" id="fL8-bM-SWB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mEk-jg-esM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7n-48-eyr">
+                                <rect key="frame" x="245" y="72" width="111" height="31"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="126" y="72" width="148" height="53"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNm-Dr-wWa">
+                                <rect key="frame" x="145" y="252" width="311" height="96"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="54"/>
+                                <state key="normal" title="BOMBITAVI!">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buzzer:" destination="Djw-CO-VYo" eventType="touchUpInside" id="PeU-C9-U3x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.55327325299999996" green="0.060129867080000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UNm-Dr-wWa" firstAttribute="centerY" secondItem="mEk-jg-esM" secondAttribute="centerY" id="IPE-cb-Wxk"/>
+                            <constraint firstItem="d7n-48-eyr" firstAttribute="centerX" secondItem="mEk-jg-esM" secondAttribute="centerX" id="ccl-lL-5Oj"/>
+                            <constraint firstItem="d7n-48-eyr" firstAttribute="top" secondItem="plX-Bo-80c" secondAttribute="bottom" constant="8" id="ev0-gU-lvY"/>
+                            <constraint firstItem="UNm-Dr-wWa" firstAttribute="centerX" secondItem="mEk-jg-esM" secondAttribute="centerX" id="xyn-5r-Msj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerName" destination="d7n-48-eyr" id="gle-HG-y4P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4WA-Gs-DSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3442" y="297"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mET-WK-7ZI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CHu-BC-UpN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TYt-NR-O9m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="nKz-74-oOf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4w-qw-vDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="-435"/>
+        </scene>
+    </scenes>
+</document>
